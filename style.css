@@ -1,0 +1,115 @@
+body{
+    background-image: url(./images/v5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(1, 2, 15);
+    font-size: 75px;
+}
+#name p {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: auto;
+    padding:15px 45px;
+}
+nav{
+    text-align: center;
+    font-size: 45px;
+    flex: auto;
+}
+.about {
+    margin-right: 50px;
+}
+.about:hover {
+    color:white;
+    text-decoration: underline;
+    padding: 20px 60px;
+    background-color: rgb(207, 24, 24);
+    border-radius: 3rem;
+}
+.contacts:hover{
+    color: white;
+    text-decoration: underline;
+    padding: 1rem;
+    background-color: rgb(236, 24, 24);
+    border-radius: 3rem;
+}
+.projects:hover{
+    color: white;
+    text-decoration: underline;
+    padding: 1rem;
+    background-color: rgb(236, 24, 24);
+    border-radius: 3rem;
+}
+.projects{
+    color: blueviolet;
+}
+
+#education ul {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: auto;
+    padding: 25px 45px
+}
+h2, #eductaion h2{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin:auto;
+    padding: 30px 45px;
+}
+
+* p, h1 , h2, ol, ul {
+    color: #fff;
+}
+footer {
+    text-align: center;
+    font-size: 2rem;
+}
+#hobbies{
+    font-size: 2rem;
+}
+#education{
+    font-size: 2rem;
+    gap: 1rem
+}
+#bottom {
+    font-size: 2rem;
+    color: #fff;
+}
+#email:hover {
+    background-color: rgb(9, 140, 70);
+}
+#email {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    border-radius: 3rem;
+}
+#pjects{
+    font-size: 2rem;
+}
+.list {
+    text-align: center;
+    list-style-position: inside;
+    padding:60px 60px 60px 60px;
+}
+button {
+    background-color: chocolate;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    border-radius: 3rem;
+}
+button:hover {
+    background-color: darkcyan;
+}
