@@ -10,7 +10,7 @@ body{
 h1 {
     text-align: center;
     color: rgb(1, 2, 15);
-    font-size: 75px;
+    font-size: 3rem;
 }
 #name p {
     font-size: 2rem;
@@ -100,16 +100,18 @@ footer {
 .list {
     text-align: center;
     list-style-position: inside;
-    padding:60px 60px 60px 60px;
+    padding:2rem;
 }
 button {
-    background-color: chocolate;
+    background-color: #007BFF;
     color: white;
+    border: none;
     padding: 10px 20px;
+    cursor: pointer;
     border-radius: 5px;
-    cursor:pointer;
-    border-radius: 3rem;
-}
-button:hover {
-    background-color: darkcyan;
-}
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
