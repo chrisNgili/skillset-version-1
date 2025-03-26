@@ -6,7 +6,8 @@ body{
     background-size: cover;
     text-align: center;
     min-height: 100vh;
-    width: 100%
+    width: 100%;
+    display: flexbox;
 }
 
 h1 {
@@ -25,6 +26,8 @@ nav{
     text-align: center;
     font-size: 45px;
     flex: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .about {
     margin-right: 50px;
