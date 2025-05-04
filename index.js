@@ -1,8 +1,3 @@
-const input = document.getElementById('button');
-input.addEventListener('click', function() {
-  alert('Wupps! Nothing here');
-});
-
 
 
 const button = document.getElementById('button');
@@ -42,3 +37,4 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+

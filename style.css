@@ -1,112 +1,109 @@
-/* General Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     margin: 0;
-    background-color: #333; /* Dark gray background */
-    color: #eee; /* Light gray text */
+    background-color: #132743;
+    color: #e0f2f7;
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #222; /* Darker container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
-    border-radius: 8px;
-}
-
-/* Header Styles */
 header {
-    background-color: #800080; /* Darker purple */
+    background-color: rgba(19, 39, 67, 0.8);
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    margin-bottom: 5px;
-    font-size: 2.5em;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    font-size: 2.2em;
 }
 
 header h2 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #ccc; /* Slightly lighter header text */
+    font-size: 1em;
+    font-weight: 400;
+    color: #a7c0cd;
+    margin-top: 5px;
 }
 
 nav a {
-    color: #ddd;
+    color: #e0f2f7;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    margin-left: 20px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffb300; /* Darker gold on hover */
+    color: #64ffda;
 }
 
-/* Main Content Styles */
 main {
-    padding: 20px;
+    padding: 40px 30px;
 }
 
 section {
+    background-color: rgba(19, 39, 67, 0.7);
+    padding: 30px;
     margin-bottom: 30px;
-    padding: 20px;
-    background-color: #444; /* Darker section background */
     border-radius: 8px;
-    border: 1px solid #666; /* Darker border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-    color: #1e88e5; /* Darker blue heading */
-    border-bottom: 3px solid #1e88e5;
+    font-family: 'Orbitron', sans-serif;
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 section p {
-    margin-bottom: 10px;
-    color: #ccc;
+    margin-bottom: 15px;
+    color: #a7c0cd;
 }
 
-/* List Styles */
 .list {
     list-style: none;
     padding: 0;
 }
 
 .list li {
-    margin-bottom: 8px;
-    color: #388e3c; /* Darker green list items */
+    margin-bottom: 10px;
+    color: #e0f2f7;
 }
 
-/* Project Styles */
 #pjects ol {
-    list-style: decimal;
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
 }
 
 #pjects li {
-    margin-bottom: 10px;
-    color: #d32f2f; /* Darker red project links */
+    margin-bottom: 15px;
+}
+
+#pjects li::before {
+    content: "\25CF";
+    color: #64ffda;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 #pjects a {
-    color: inherit;
+    color: #64ffda;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 #pjects a:hover {
-    color: #1b5e20; /* Darker green on hover */
+    color: #a7c0cd;
 }
 
-/* Interests and Skills Styles */
 #hobbies ul.list {
     display: inline;
     margin-left: 10px;
@@ -114,92 +111,96 @@ section p {
 
 #hobbies ul.list li {
     display: inline-block;
-    margin-right: 10px;
-    padding: 5px 10px;
-    background-color: #f57c00; /* Darker orange for skills/interests */
+    margin-right: 15px;
+    padding: 8px 15px;
+    background-color: #2c3e50;
     color: #fff;
     border-radius: 5px;
+    font-size: 0.9em;
 }
 
-/* Contact Styles */
 #bottom h3 {
-    color: #b71c1c; /* Darker red contact heading */
-    border-bottom: 3px solid #b71c1c;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 #bottom ul.list li {
-    color: #00acc1; /* Darker cyan contact info */
+    color: #e0f2f7;
+    margin-bottom: 10px;
 }
 
 #email {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #f9a825; /* Darker yellow email button */
+    padding: 12px 25px;
+    background-color: #ff6f61;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: background-color 0.3s ease;
 }
 
 #email:hover {
-    background-color: #d84315; /* Darker orange on hover */
+    background-color: #d84315;
 }
 
 #button {
-    display: block;
-    padding: 10px 20px;
-    background-color: #43a047; /* Darker green button */
-    color: #fff;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #64ffda;
+    color: #132743;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
     cursor: pointer;
+    font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 #button:hover {
-    background-color: #2e7d32; /* Even darker green on hover */
+    background-color: #45a049;
+    color: #fff;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background-color: #111;
-    color: #ddd;
-    border-radius: 0 0 8px 8px;
+    padding: 20px 30px;
+    background-color: #132743;
+    color: #a7c0cd;
+    border-top: 1px solid #2c3e50;
+    font-size: 0.9em;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        padding: 15px;
-    }
-
     header {
-        padding: 15px 0;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    header h1 {
-        font-size: 2em;
+    nav {
+        margin-top: 15px;
     }
 
     nav a {
-        margin: 0 10px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    main {
+        padding: 30px 20px;
     }
 
     section {
-        padding: 15px;
+        padding: 20px;
         margin-bottom: 20px;
     }
 
     #hobbies ul.list li {
-        display: block;
+        margin-right: 10px;
         margin-bottom: 5px;
-        margin-right: 0;
     }
 }
