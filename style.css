@@ -1,201 +1,205 @@
-:root {
-    --cyber-blue: #00f9ff;
-    --neon-purple: #bc13fe;
-    --matrix-green: #0fff50;
-    --hologram-pink: #ff06b5;
-    --synth-orange: #ff5e1a;
-    --void-black: #00010d;
-    --cyber-glow: 0 0 15px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
+/* General Styles */
 body {
-    background: var(--void-black);
-    color: white;
-    font-family: 'Rajdhani', sans-serif;
-    line-height: 1.8;
-    overflow-x: hidden;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #333; /* Dark gray background */
+    color: #eee; /* Light gray text */
+    line-height: 1.6;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Darker container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    border-radius: 8px;
+}
+
+/* Header Styles */
 header {
-    background: linear-gradient(135deg, var(--cyber-blue) 0%, var(--neon-purple) 100%);
-    padding: 4rem 2rem;
+    background-color: #800080; /* Darker purple */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    margin-bottom: 3rem;
-    position: relative;
+    border-radius: 8px 8px 0 0;
 }
 
-header::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.1));
-    pointer-events: none;
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
 }
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 0 var(--hologram-pink),
-                -2px -2px 0 var(--synth-orange);
-    animation: textGlow 2s infinite alternate;
-}
-
-h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: var(--matrix-green);
-    margin: 2rem 0;
-    font-size: 2.5rem;
-    position: relative;
-    display: inline-block;
-}
-
-h2::before {
-    content: '// ';
-    color: var(--cyber-blue);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
+header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #ccc; /* Slightly lighter header text */
 }
 
 nav a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid var(--cyber-blue);
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    background: var(--neon-purple);
-    transform: translateY(-3px);
-    box-shadow: var(--cyber-glow) var(--hologram-pink);
+    color: #ffb300; /* Darker gold on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
 }
 
 section {
-    padding: 3rem;
-    margin: 3rem auto;
-    max-width: 1200px;
-    background: linear-gradient(145deg, rgba(25,25,25,0.9), rgba(10,10,10,0.9));
-    border: 1px solid var(--cyber-blue);
-    border-radius: 15px;
-    position: relative;
-    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #444; /* Darker section background */
+    border-radius: 8px;
+    border: 1px solid #666; /* Darker border */
 }
 
-section::before {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(45deg, var(--cyber-blue), var(--neon-purple), var(--hologram-pink));
-    z-index: -1;
-    border-radius: 17px;
-    animation: borderRotate 10s linear infinite;
+section h2 {
+    color: #1e88e5; /* Darker blue heading */
+    border-bottom: 3px solid #1e88e5;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
+section p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* List Styles */
 .list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    padding: 0;
 }
 
 .list li {
-    padding: 1.5rem;
-    background: rgba(0,0,0,0.5);
-    border-left: 3px solid var(--matrix-green);
-    position: relative;
-    transition: transform 0.3s ease;
+    margin-bottom: 8px;
+    color: #388e3c; /* Darker green list items */
 }
 
-.list li:hover {
-    transform: translateX(10px);
+/* Project Styles */
+#pjects ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+#pjects li {
+    margin-bottom: 10px;
+    color: #d32f2f; /* Darker red project links */
+}
+
+#pjects a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#pjects a:hover {
+    color: #1b5e20; /* Darker green on hover */
+}
+
+/* Interests and Skills Styles */
+#hobbies ul.list {
+    display: inline;
+    margin-left: 10px;
+}
+
+#hobbies ul.list li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f57c00; /* Darker orange for skills/interests */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Contact Styles */
+#bottom h3 {
+    color: #b71c1c; /* Darker red contact heading */
+    border-bottom: 3px solid #b71c1c;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#bottom ul.list li {
+    color: #00acc1; /* Darker cyan contact info */
 }
 
 #email {
-    display: inline-flex;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    background: linear-gradient(90deg, var(--synth-orange), var(--hologram-pink));
-    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9a825; /* Darker yellow email button */
+    color: #fff;
     text-decoration: none;
-    border-radius: 50px;
-    font-family: 'Orbitron', sans-serif;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
-#email::after {
-    content: '➤';
-    margin-left: 1rem;
-    transform: translateX(50px);
-    transition: transform 0.3s ease;
-}
-
-#email:hover::after {
-    transform: translateX(0);
+#email:hover {
+    background-color: #d84315; /* Darker orange on hover */
 }
 
 #button {
-    background: var(--matrix-green);
-    color: var(--void-black);
+    display: block;
+    padding: 10px 20px;
+    background-color: #43a047; /* Darker green button */
+    color: #fff;
     border: none;
-    padding: 1.5rem 3rem;
-    border-radius: 50px;
+    border-radius: 5px;
+    margin-top: 15px;
     cursor: pointer;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    position: relative;
+    transition: background-color 0.3s ease;
 }
 
 #button:hover {
-    background: var(--cyber-blue);
-    letter-spacing: 2px;
+    background-color: #2e7d32; /* Even darker green on hover */
 }
 
+/* Footer Styles */
 footer {
-    background: rgba(0,0,0,0.9);
-    padding: 3rem;
     text-align: center;
-    margin-top: 5rem;
-    border-top: 2px solid var(--neon-purple);
+    padding: 15px 0;
+    background-color: #111;
+    color: #ddd;
+    border-radius: 0 0 8px 8px;
 }
 
-@keyframes textGlow {
-    from { text-shadow: 0 0 10px var(--cyber-blue), 0 0 20px var(--cyber-blue); }
-    to { text-shadow: 0 0 20px var(--neon-purple), 0 0 30px var(--neon-purple); }
-}
-
-@keyframes borderRotate {
-    100% { transform: rotate(360deg); }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    nav { flex-direction: column; gap: 1rem; }
-    section { margin: 2rem 1rem; padding: 2rem; }
-    .list { grid-template-columns: 1fr; }
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #hobbies ul.list li {
+        display: block;
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
 }
